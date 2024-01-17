@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando páginas HTML do zero</title>
+</head>
+<body>
+
+<h1 id="inicio" >O que aprendi no Módulo 1 de HTML básico</h1>
+
+
+<h2>Indices</h2>
+
+<ul>
+    <li><a href="#cliente">Entendendo comunicação Cliente x Server</a></li>
+    <li><a href="#HTML">Introdução a HTML na prática</a></li>
+    <li><a href="#TAG">Tipografia</a></li>
+    <li><a href="#link">Links</a></li>
+
+</ul>
+
+<h2 id="cliente">1 - Entendendo comunicação Cliente x Servidor</h2>
+<small><a href="#inicio">(Voltar)</a></small>
+<h4>1.2 O QUE SÃO CLIENTS</h4>
+O conceito de cliente no “linguajar” web é quando você consome algo na internet, ou seja, como eu consumo vídeos de aulas na internet, eu sou um client. 
+Cliente consome e os servidores “SERVEM”. Os servidores nos fornecem os arquivos estáticos (HTML, CSS, Javascript, imagens, vídeos, audios…), como isso o nosso computador armazena esses dados em Cache, o que evita um tráfego inútil lá no servidor novamente, para acessar o site que eu acessei anteriormente. 
+Por haver os clients, precisamos sempre pensar na experiencia de uso deles, seja com responsividade dos sites ou o design (Front-end). 
+
+<h4>1.3 O QUE SÃO SERVIDORES</h4>
+Servidor servem os clientes. São locais onde estão hospedados os sites que visitamos. Vários dispositivos podem se conectar a ele solicitando requisições. Existem servidores de Arquivos, Segurança (firewall), E-mail, Web, Streaming… 
+E temos o Servidores proxy:  que é um servidor que será um intermedio entre a internet e as maquinas da empresa. Nesse caso, este servidor proxy pode ser utilizado para bloquear páginas especificas, para evitarem danos na rede.
+
+Sistemas operacionais baseados para servidores: Windows Server, Ubuntu, CentOS, Fedora, Debian, Oracle Linux
+E tem os servidores Web: Apache, NGINX
+Como funciona? Vem um cliente através de um navegador e solicita uma requisição http para dentro do servidor, o sistema operacional irá processar essa requisição e devolver uma resposta ao cliente.  No servidor ele possui um sistema operacional instalado, juntamente com um servidor web. Ambos trabalham em conjuntos, e cada um possui sua função. 
+
+<h4>HOSPEDAGEM DE SITES</h4>
+É colocar os seus arquivos do site em um servidor, para ficar disponível para ser acessado na internet. 
+
+
+<h4>1.4 LINGUAGENS DE PROGRAMAÇÃO</h4>
+É um conjunto de instruções e regras para gerar um programa. Tendo como programas mais utilizados hoje em dia: Javascript, Python, Java, PHP e C#, porém existem várias outras.
+
+<h5>SERVER-SIDE</h5>
+São linguagens utilizadas e executadas no servidor, e não no cliente. Algumas das linguagens executadas no servidor são: PHP, Java e Javascript, Ruby, C#… Essas linguagens são utilizadas no lado do servidor. 
+
+<h5>CLIENT-SIDE</h5>
+São linguagens que rodam do lado do cliente, no nosso notebook/PC (Aplicações Web - navegador). No caso, os navegadores utilizam HTML, CSS e Javascript, e sim, o Js ele roda nos dois lados, tanto o server quanto o client Side. 
+
+
+<h2 id="HTML">2 - Introdução a HTML na prática</h2>
+<small><a href="#inicio">(Voltar)</a></small>
+<p>Estrutura básica do HTML se baseia em 3 partes:</p>
+
+TAG HTML: Toda tag é iniciada com (< >) e é fechada com (</ >)
+<ul><p><li>HEAD: Cabeçalho: Tudo que vai carregar antes de aparecer pro usuário. Pré carrega antes de exibir ao usuário. </li></p></ul>
+<ul><p><li>BODY: Corpo, que vai aparecer para o usuário. Seria aonde nós lemos as matérias dos sites, são todos os textos.</li></p></ul>
+<ul><p><li>TITLE: Nome da ABA no nosso navegador.</li></p></ul>
+
+Tudo que esteja dentro das TAGs irá reproduzir o efeito que a tag realiza. Algumas tags não possui a tag de fechamento, no caso do input. 
+Ele mesmo não possui um inicio e fim, porque ela abre um campo de texto. Então no final do texto ela se auto fecha.
+
+
+<h3>Atributos que as TAGs podem possuir. </h3>
+<li>Id - Ele é um identificador de um elemento.</li>
+<li>Style - Mais voltado para o CSS, onde vamos estilizar o nosso HTML.</li>
+<li>Class - Onde eu posso passar um valor pra ele, e tudo que tiver aquele valor ou texto que passei, ficará da mesma forma que eu deixei editado. </li>
+<li>Input - No input trabalharemos muito com “text" e “number”.</li>
+<li>Img - serve para adicionarmos imagens ao nosso HTML. No caso, precisamos de adicionar uma fonte, aonde a imagem está localizada, que ficaria como img src = “direção da onde está a imagem”</li>
+
+
+<h3 id="TAG">TAGs TEXTO - Tipografia</h3>
+<small><a href="#inicio">(Voltar)</a></small>
+<ul>
+ <li><strong>H1</strong> - Cabeçalho ou título da nossa página. Existem H1,H2,H3… E cada um tem o seu nível de prioridade. Então seria h1 título da página, h2 o subtítulo… e por ai vai. 
+ <li><strong>p</strong> -  Responsável pelos nossos parágrafos. Ele faz a quebra de linha dos nossos textos. 
+ <li><strong>blockquote</strong> - É como podemos realizar uma citação no nosso texto. Ele automaticamente já desprende o nosso texto do parágrafo comum, e já jogo ele mais pro centro da nossa pagina. 
+</ul>
+
+<h3>Listas ordenadas e não ordenadas</h3>
+<li>ol - lista ordenada. Cada item dessa lista precisa de “tags filhas” para funcionar, ou seja, uma tag dentro de outra tag. Nesta lista ordenada, os itens apareceriam em sequências, de 1,2,3...</li>
+<li>ul - lista não ordenada. Cada item dessa lista recebe marcadores ao ínves de numeração. </li>
+
+
+<h3 id="link">Links</h3>
+
+<small><a href="#inicio">(Voltar)</a></small>
+
+<p> são métodos para acessar novos sites, navegar por outros sites dentro de uma página. Neste caso utilizaremos o comando <strong>a href=""</strong> e direcionaríamos a nossa página para o link que quisermos(adicionando o link desejado dentro do comando). 
+Para abrirmos um link em uma nova aba, apenas acrescentaríamos o comando target=“_blank”, onde já seria o suficiente para abrirmos esse link em uma nova aba, sem termos o trabalho de sairmos da aba atual.
+Ao mesmo tempo que eu posso fazer o link ir de um site para outro, e para uma pagina para outra, eu posso fazer uma ancoragem, ou seja, fazer com que a pagina desce até um determinado ponto especifico quando clicado no link.
+</p>
+
+
+
+
+</body>
+</html>
